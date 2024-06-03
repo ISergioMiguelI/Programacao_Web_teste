@@ -1,0 +1,41 @@
+<curso>
+    <nome>Engenharia de Redes e Sistemas</nome>
+    <unidadesCurriculares>
+        <unidadeCurricular>
+            <nome>Programação Web</nome>
+            <codigo>EI101</codigo>
+            <semestre>2</semestre>
+            <docentes>
+                <docente>
+                    <nome>João Silva</nome>
+                    <email>joao.silva@ipvc.pt</email>
+                </docente>
+                <docente>
+                    <nome>Maria Pereira</nome>
+                    <email>maria.pereira@ipvc.pt</email>
+                </docente>
+            </docentes>
+        </unidadeCurricular>
+        <unidadeCurricular>
+            <nome>Bases de Dados</nome>
+            <codigo>EI102</codigo>
+            <semestre>1</semestre>
+            <docentes>
+                <docente>
+                    <nome>Carlos Santos</nome>
+                    <email>carlos.santos@ipvc.pt</email>
+                </docentes>
+            </unidadeCurricular>
+        <unidadeCurricular>
+            <nome>Redes de Computadores</nome>
+            <codigo>EI103</codigo>
+            <semestre>2</semestre>
+            <docentes>
+                <docente>
+                    <nome>Ana Lopes</nome>
+                    <email>ana.lopes@ipvc.pt</email>
+                </docente>
+            </docentes>
+        </unidadeCurricular>
+    </unidadesCurriculares>
+</curso>

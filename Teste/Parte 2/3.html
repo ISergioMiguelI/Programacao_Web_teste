@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<div class="myClass">Primeiro</div>
+<div class="myClass">Segundo</div>
+<div class="myClass">Terceiro</div>
+
+<script>
+    // Seleciona todos os elementos com a classe "myClass" e altera o texto
+    //Utilização do getElementsByClassName
+
+    var divs = document.getElementsByClassName("myClass");
+    for (var i = 0; i < divs.length; i++) {
+        divs[i].innerText = "Conteudo Atualizado!";
+    }
+</script>
+
+</body>
+</html>

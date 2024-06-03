@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Viana_chafariz_e_casa_da_camara.JPG/1200px-Viana_chafariz_e_casa_da_camara.JPG" class="card-img-top" alt="Monumento 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Monumento 1</h5>
+                            <p class="card-text" style="display:none;">Chafariz da Praça da República</p>
+                            <a href="#" class="btn btn-primary" onclick="mostrarDescricao(this)">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://cdn.visitportugal.com/sites/default/files/styles/encontre_detalhe_poi_destaque/public/mediateca/N4.MON5064d.jpg?itok=99wZKDcZ" class="card-img-top" alt="Monumento 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Monumento 2</h5>
+                            <p class="card-text" style="display:none;">Antigos Paços do Concelho.</p>
+                            <a href="#" class="btn btn-primary" onclick="mostrarDescricao(this)">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://www.guiadacidade.pt/assets/capas_poi/capa_282896.jpg" class="card-img-top" alt="Monumento 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Monumento 3</h5>
+                            <p class="card-text" style="display:none;">Edifício da Misericórdia e Igreja.</p>
+                            <a href="#" class="btn btn-primary" onclick="mostrarDescricao(this)">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://www.cm-viana-castelo.pt/wp-content/uploads/2022/12/trajar_memorias_no_tempo.jpg" class="card-img-top" alt="Monumento 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Monumento 4</h5>
+                            <<p class="card-text" style="display:none;">Museu do Traje</p>
+                            <a href="#" class="btn btn-primary" onclick="mostrarDescricao(this)">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnOSENXJWq_jwMf2A20W51dul_fcM48mjY-g&s" class="card-img-top" alt="Monumento 5">
+                        <div class="card-body">
+                            <h5 class="card-title">Monumento 5</h5>
+                            <p class="card-text" style="display:none;">Hospital Velho.</p>
+                            <a href="#" class="btn btn-primary" onclick="mostrarDescricao(this)">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/03/75/6e/c1/casa-dos-nichos.jpg?w=1200&h=1200&s=1" class="card-img-top" alt="Monumento 6">
+                        <div class="card-body">
+                            <h5 class="card-title">Monumento 6</h5>
+                            <p class="card-text" style="display:none;">Casa dos Nichos.</p>
+                            <a href="#" class="btn btn-primary" onclick="mostrarDescricao(this)">Ver mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        function mostrarDescricao(elemento) {
+            var cardBody = elemento.parentNode;
+            var descricao = cardBody.querySelector('.card-text');
+            descricao.style.display = 'block';
+           
+            elemento.textContent = "Ver menos";
+            
+            elemento.removeAttribute("onclick");
+          
+            elemento.addEventListener("click", function() {
+                descricao.style.display = 'none';
+              
+                elemento.textContent = "Ver mais";
+              
+                elemento.setAttribute("onclick", "mostrarDescricao(this)");
+            });
+        }
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</html>
